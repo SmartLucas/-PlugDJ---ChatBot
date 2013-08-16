@@ -734,7 +734,7 @@
     rulesCommand.prototype.functionality = function() {
       var msg1 ;
       msg1 = "1- Tempo Maximo para Musicas : 5 Min. 2- Respeitar os administradores. 3-Sem Flood/Spam no chat. 4-Não fique pedindo cargo. ";
-      msg1 +=5-Musicas Repetidas/Fora dos temas permitidos serão Puladas! 6- Não divulgar outras salas. 7- Falar apenas em BR/PT. 8- Não falar em amarelo. ";
+      msg1 += "5-Musicas Repetidas/Fora dos temas permitidos serão Puladas! 6- Não divulgar outras salas. 7- Falar apenas em BR/PT. 8- Não falar em amarelo. ";
       return API.sendChat(msg);
     };
 
@@ -788,7 +788,7 @@
 
     sourceCommand.prototype.functionality = function() {
       var msg;
-      msg = 'BOT criado e editado por bruce, caso queira falar com ele adicione ele no skype blackrockshooter1337';
+      msg = 'BOT criado e editado por NoName, caso queira falar com ele adicione ele no skype adm.noname';
       return API.sendChat(msg);
     };
 
@@ -1082,7 +1082,7 @@
     lockCommand.prototype.init = function() {
       this.command = '!trava';
       this.parseType = 'exact';
-      return this.rankPrivelege = 'bouncer';
+      return this.rankPrivelege = 'featured';
     };
 
     lockCommand.prototype.functionality = function() {
@@ -1104,7 +1104,7 @@
     unlockCommand.prototype.init = function() {
       this.command = '!destrava';
       this.parseType = 'exact';
-      return this.rankPrivelege = 'bouncer';
+      return this.rankPrivelege = 'featured';
     };
 
     unlockCommand.prototype.functionality = function() {
@@ -1689,7 +1689,7 @@
     msg = chat.message.toLowerCase();
     responses = ["Pelo amor de deus @{beggar}!  Pare de ser assim", "Pessoal @{beggar} e um grande idiota ಠ_ಠ", "srsly @{beggar}? ಠ_ಠ", "@{beggar}. pls"];
     r = Math.floor(Math.random() * responses.length);
-    if (msg.indexOf('nigga') !== -1 || msg.indexOf('hitler') !== -1 || msg.indexOf('br br br') !== -1 || msg.indexOf('hue hue hue') !== -1 || msg.indexOf('adf.ly') !== -1) {
+    if (msg.indexOf('nigga') !== -1 || msg.indexOf('hitler') !== -1 || msg.indexOf('br br br') !== -1 || msg.indexOf('hue hue hue') !== -1 || msg.indexOf('adf.ly') !== -1)|| msg.indexOf('porra') !== -1) {
       return API.sendChat(responses[r].replace("{beggar}", chat.from));
     }
   };
